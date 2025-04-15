@@ -25,7 +25,7 @@ Each question is worth 0.5 points. Total: **10 points**
 
 2. Which command builds a Docker image from a Dockerfile?  
    - A) `docker pull`  
-   - B) `docker build`  
+   - **B) `docker build`**  
    - C) `docker start`  
    - D) `docker run`  
 
@@ -205,6 +205,7 @@ Must implement:
 ├── frontend/
 │   └── ...
 ├── .env.example
+├── default.conf
 ├── Dockerfile
 ├── docker-compose.yml
 ├── README.md
