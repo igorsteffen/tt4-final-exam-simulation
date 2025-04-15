@@ -1,0 +1,140 @@
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  
+    h2 {
+      text-align: center;
+      margin-bottom: 24px;
+      color: #333;
+    }
+  
+    .form {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+  
+      .form-group {
+        display: flex;
+        flex-direction: column;
+  
+        label {
+          margin-bottom: 6px;
+          font-weight: 600;
+          color: #555;
+        }
+  
+        input {
+          padding: 8px 10px;
+          border-radius: 6px;
+          border: 1px solid #ccc;
+          font-size: 14px;
+          transition: border 0.2s;
+  
+          &:focus {
+            outline: none;
+            border-color: #007bff;
+          }
+        }
+      }
+  
+      .actions {
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+  
+        .btn {
+          padding: 8px 16px;
+          font-weight: bold;
+          border: none;
+          border-radius: 6px;
+          cursor: pointer;
+          transition: background 0.3s;
+  
+          &.btn-primary {
+            background: #007bff;
+            color: white;
+  
+            &:hover {
+              background: #0056b3;
+            }
+          }
+  
+          &.btn-secondary {
+            background: #e0e0e0;
+  
+            &:hover {
+              background: #c5c5c5;
+            }
+          }
+        }
+      }
+    }
+  
+    .item-list {
+      margin-top: 30px;
+      list-style: none;
+      padding: 0;
+  
+      .item-card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 14px 18px;
+        border: 1px solid #eee;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        background: #f9f9f9;
+  
+        .info {
+          h4 {
+            margin: 0 0 4px 0;
+            font-size: 18px;
+            color: #333;
+          }
+  
+          p {
+            margin: 0;
+            font-size: 14px;
+            color: #666;
+          }
+        }
+  
+        .controls {
+          display: flex;
+          gap: 10px;
+  
+          .btn {
+            padding: 6px 12px;
+            font-size: 13px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 600;
+          }
+  
+          .btn-edit {
+            background-color: #ffc107;
+            color: white;
+  
+            &:hover {
+              background-color: #e0a800;
+            }
+          }
+  
+          .btn-delete {
+            background-color: #dc3545;
+            color: white;
+  
+            &:hover {
+              background-color: #b02a37;
+            }
+          }
+        }
+      }
+    }
+  }
+  

@@ -1,0 +1,35 @@
+<div class="container">
+  <h2>Manage Itens</h2>
+
+  <form (ngSubmit)="saveItem()" class="form">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input id="name" type="text" [(ngModel)]="selectedItem.name" name="name" required />
+    </div>
+
+    <div class="form-group">
+      <label for="description">Description</label>
+      <input id="description" type="text" [(ngModel)]="selectedItem.description" name="description" required />
+    </div>
+
+    <div class="actions">
+      <button type="submit" class="btn btn-primary">{{ isEditing ? 'Update' : 'Create' }}</button>
+      <button type="button" class="btn btn-secondary" (click)="resetForm()" *ngIf="isEditing">Cancel</button>
+    </div>
+  </form>
+
+  <hr />
+
+  <ul class="item-list">
+    <li *ngFor="let item of itens" class="item-card">
+      <div class="info">
+        <h4>{{ item.name }}</h4>
+        <p>{{ item.description }}</p>
+      </div>
+      <div class="controls">
+        <button (click)="editItem(item)" class="btn btn-edit">Edit</button>
+        <button (click)="deleteItem(item.id)" class="btn btn-delete">Delete</button>
+      </div>
+    </li>
+  </ul>
+</div>
