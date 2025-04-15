@@ -254,4 +254,4 @@ The `README.md` file in the GitHub repository **must contain this final exam** (
 
 # 🚨 Submit only the link to your GitHub repository  
 # ❌ Not following the repository structure = Automatic elimination  
-# ✅ This document must be included and completed in `README.md`  
+# ✅ This document must be included and completed in `README.md`
